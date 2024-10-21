@@ -1,6 +1,4 @@
 import streamlit as st
-from streamlit_player import st_player
-
 import pandas as pd
 
 SHEET_ID = '1P4qLMUxjbXFY2-FtoIQNhSdcogLgoE0aM1yjvaQbt3Y'
@@ -12,7 +10,7 @@ df = pd.read_csv(url)
 # def main():
 st.title("TNA Cup")
 with st.container():
-    st_player("https://www.youtube.com/live/kp_W_j-YCzg?si=hspCSsW3L-9tg_ZN")
+    st.video("https://www.youtube.com/live/kp_W_j-YCzg?si=hspCSsW3L-9tg_ZN")
     
 col1, col2= st.columns(2)
 with col1:
